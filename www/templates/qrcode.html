@@ -1,0 +1,16 @@
+<ion-view>
+	<ion-nav-buttons side="left">
+		<button class="button button-icon button-clear ion-android-arrow-back" ng-click="back()">
+        </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear" ng-click="doSignout()">
+        <h3><i class=" ion-log-out"></i> Log out</h3></button>
+      </ion-nav-buttons>
+  <ion-content>
+    <div style="margin-left:20px;margin-top:20px;">
+    	<qrcode data="{{qrData}}" size="{{screenSize-40}}"></qrcode>
+    </div>
+
+  </ion-content>
+</ion-view>

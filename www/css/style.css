@@ -1,0 +1,50 @@
+/* Empty. Add your own CSS if you like */
+@keyframes spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+#advanced {
+	width: 200px;
+	height: 200px;
+	
+	background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, # 0%, #11C1F3 100%, white 95%);
+	background-image: -webkit-radial-gradient(45px 45px, circle cover, white, #11C1F3);
+	background-image: radial-gradient(45px 45px 45deg, circle cover, white 0%, #11C1F3 100%, white 95%);
+	
+	animation-name: spin; 
+	animation-duration: 3s; /* 3 seconds */
+	animation-iteration-count: infinite; 
+	animation-timing-function: linear;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px; 
+	background: #F31155;
+	color: white;
+	font-size: 20px;
+	/* width and height can be anything, as long as they're equal */
+}
+
+.button.active, .button.activated {
+border-color: #F18AA9;
+background-color: #F18AA9;
+color: white;
+}
+
+
+.button.hover {
+color: white;
+}
+
+.bar.bar-stable {
+    border-color: white !important;
+    background-color: transparent;
+    background-image: none !important;
+    color: #444;
+}
+.title{
+	text-align: center;
+}

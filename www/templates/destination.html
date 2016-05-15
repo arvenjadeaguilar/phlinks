@@ -1,0 +1,16 @@
+<ion-view>
+  <ion-content>
+    <h1 class="title">Destination</h1>
+
+    <ion-list>
+	  <ion-radio ng-model="destination" ng-value="1">Opol (P 15)</ion-radio>
+	  <ion-radio ng-model="destination" ng-value="2">El Salvador (P 27)</ion-radio>
+	  <ion-radio ng-model="destination" ng-value="3">Alubijid (P 42)</ion-radio>
+	  <ion-radio ng-model="destination" ng-value="4">Laguindingan (P 52)</ion-radio>
+
+	</ion-list>
+	<button class="button button-block button-positive" ion-ripple data-ng-click="setDestination(destination)">
+    	Generate QR	
+    </button>
+  </ion-content>
+</ion-view>

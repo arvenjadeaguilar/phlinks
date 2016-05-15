@@ -1,0 +1,22 @@
+<ion-view>
+	<ion-nav-buttons side="left">
+    <button class="button button-icon button-clear ion-android-arrow-back" ng-click="back()">
+        </button>
+    </ion-nav-buttons>	
+	  <ion-content>
+	    <h1 class="title">Reload Balance</h1>
+	    
+	    <div class="list col col-80 col-offset-10">
+		  
+		  <form name="reload_form" ng-submit="doReload(amount)">
+		  	<label class="item item-input">
+			    <span class="input-label title">Amount</span>
+			    <input type="number" name="amount" data-ng-model="amount" required>
+			</label>	
+		  	<button class="button button-block button-positive" data-ng-disabled="reload_form.$invalid" type="submit">Reload</button>
+		  </form>
+
+		  
+		</div>
+	  </ion-content>
+</ion-view>

@@ -1,0 +1,19 @@
+<ion-view>
+	<ion-nav-buttons side="right">
+
+        <a class="button button-icon button-clear" href="#app/reload">
+        <h3><i class=" ion-cash"></i> Reload</h3></a>
+
+        <button class="button button-icon button-clear" ng-click="doSignout()">
+        <h3><i class=" ion-log-out"></i> Log out</h3></button>
+    </ion-nav-buttons>
+  <ion-content>
+    <div class="col col-80 col-offset-10" style="text-align:center;margin-top:10%;">
+    	
+    	<button class="button circle" ion-ripple data-ng-hide="loading" data-ng-click="generateQr()" style="width:{{screenSize-100}}px;height:{{screenSize-100}}px">
+    		Generate QR	
+    	</button>
+        <h3>Balance: {{phlink_user.balance|number:2}}</h3>
+    </div> 
+  </ion-content>
+</ion-view>
